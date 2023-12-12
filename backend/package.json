@@ -1,37 +1,28 @@
 {
-  "name": "store-manager-backend",
-  "version": "0.1.0",
-  "description": "Store Manager API",
+  "name": "sd-0x-store-manager",
+  "version": "2.0.0",
+  "description": "Projeto Store Manager",
+  "author": "Trybe",
+  "license": "ISC",
   "main": "src/server.js",
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
+    "node": ">=16.14.0",
+    "npm": ">=8.3.1"
   },
   "scripts": {
-    "start": "node .",
-    "dev": "nodemon --inspect=0.0.0.0:9229 .",
-    "test:mocha": "mocha",
-    "test:coverage": "nyc mocha",
-    "test:mutation": "stryker run",
-    "lint": "eslint --no-error-on-unmatched-pattern ."
+    "dev:local": "npm run dev --prefix backend",
+    "test": "npm test --prefix __tests__",
+    "cy:open": "npm run cy:open --prefix __tests__",
+    "test:mocha": "npm run test:mocha --prefix backend",
+    "test:coverage": "npm run test:coverage --prefix backend",
+    "test:mutation": "npm run test:mutation --prefix backend",
+    "lint": "npm run lint --prefix __tests__ && npm run lint --prefix backend",
+    "migration": "node -e \"require('./__tests__/cypress/utils/db').runMigration()\"",
+    "seed": "node -e \"require('./__tests__/cypress/utils/db').runSeed()\"",
+    "db:reset": "npm run migration && npm run seed",
+    "postinstall": "npm install --prefix __tests__ && npm install --prefix backend"
   },
   "dependencies": {
-    "@hapi/boom": "9.1.0",
-    "express": "4.18.2",
-    "express-async-errors": "3.1.1",
-    "joi": "17.6.0",
-    "mysql2": "2.3.0"
-  },
-  "devDependencies": {
-    "eslint-config-trybe-backend": "2.1.0",
-    "@stryker-mutator/core": "6.4.2",
-    "@stryker-mutator/mocha-runner": "6.4.2",
-    "chai": "4.3.4",
-    "chai-http": "4.3.0",
-    "mocha": "10.2.0",
-    "nodemon": "2.0.22",
-    "nyc": "15.1.0",
-    "sinon": "11.1.1",
-    "sinon-chai": "3.7.0"
+    "chai": "^4.3.10"
   }
 }
