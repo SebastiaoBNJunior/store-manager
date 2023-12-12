@@ -7,7 +7,7 @@ const allProductsModel = [
     id: 2,
     name: 'Traje de encolhimento',
   },
-  ];
+];
   
 const producByIdModel = {
   id: 1,
