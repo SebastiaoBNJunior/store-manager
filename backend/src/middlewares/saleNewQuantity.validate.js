@@ -1,6 +1,6 @@
 module.exports = async (req, res, next) => {
   const newQuantity = req.body;
-
+  
   console.log(newQuantity.quantity < 1);
   
   if (newQuantity.quantity === undefined) {

@@ -64,11 +64,11 @@ const newSaleReturnMock = {
         productId: 2,
         quantity: 5,
       },
-    ],
+      ],
   },
 };
   
-const insertSaleMock = {
+  const insertSaleMock = {
   status: 201,
   data: {
     itemsSold: [
@@ -107,7 +107,7 @@ const errorSale = [
   },
 ];
   
-const errorProduct = [{ id: 2, name: 'Traje de encolhimento' }];
+  const errorProduct = [{ id: 2, name: 'Traje de encolhimento' }];
   
 module.exports = {
   newSaleMock,
