@@ -70,28 +70,28 @@ const newSaleReturnMock = {
   
 const insertSaleMock = {
   status: 201,
-    data: {
-      itemsSold: [
-        {
-          productId: 1,
-          quantity: 1,
-        },
-        {
-          productId: 2,
-          quantity: 5,
-        },
-      ],
+  data: {
+    itemsSold: [
+      {
+        productId: 1,
+        quantity: 1,
+      },
+      {
+        productId: 2,
+        quantity: 5,
+      },
+    ],
   },
 };
   
 const updateSaleQuantityMock = {
   status: 200,
-    data: {
-      date: '2023-11-25T20:57:05.000Z',
-      productId: 2,
-      quantity: 20,
-      saleId: 1,
-    },
+  data: {
+    date: '2023-11-25T20:57:05.000Z',
+    productId: 2,
+    quantity: 20,
+    saleId: 1,
+  },
 };
   
 const errorSale = [
