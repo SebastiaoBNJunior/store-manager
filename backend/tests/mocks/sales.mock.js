@@ -121,3 +121,4 @@ const newSaleMock = [
     errorSale,
     errorProduct,
   };
+  
