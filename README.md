@@ -32,19 +32,19 @@ Built folders:
 <details>
   <summary><strong>🖥️ To access</strong></summary><br />
 
-1 - Clone the repository:
+<h3>1 - Clone the repository:</h3>
 `git clone git@github.com:SebastiaoBNJunior/store-manager`
 
-2 - Enter the repository folder you just cloned.
+<h3>2 - Enter the repository folder you just cloned.</h3>
 
 You must be using node version 16 (or higher).
 
 To check your version, use the command:
 `nvm --version`
 
-3 - Instale as dependências 
+<h3>3 - Instale as dependências</h3>
 
-<h3>Quickstart with 🐳 Docker Compose:</h3>
+Quickstart with 🐳 Docker Compose:
 
 `npm install`
 
@@ -54,7 +54,7 @@ docker-compose up -d
 
 or
 
-<h3>Quickstart without 🐳 Docker Compose:</h3>
+Quickstart without 🐳 Docker Compose:
 
  Instale as dependências
 `npm install`
