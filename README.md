@@ -44,25 +44,25 @@ To check your version, use the command:
 
 3 - Quickstart with 🐳 Docker Compose:
 
-# Instale as dependências
-npm install
+<h3>Instale as dependências</h3>
+`npm install`
 
-# Inicie os containers do compose `backend` e `db`
-# A aplicação estará disponível em `http://localhost:3001` em modo de desenvolvimento
+Inicie os containers do compose `backend` e `db`
+A aplicação estará disponível em `http://localhost:3001` em modo de desenvolvimento
 docker-compose up -d
 
 or
 
-Quickstart without 🐳 Docker Compose:
+<h3>Quickstart without 🐳 Docker Compose:</h3>
 
-# Instale as dependências
-npm install
+ Instale as dependências
+`npm install`
 
-# Inicie apenas o serviço `db` no compose
-docker-compose up -d db
+ Inicie apenas o serviço `db` no compose
+`docker-compose up -d db`
 
-# Inicie a aplicação em modo de desenvolvimento
-npm run dev:local
+ Inicie a aplicação em modo de desenvolvimento
+`npm run dev:local`
 
 </details>
 
