@@ -42,9 +42,10 @@ You must be using node version 16 (or higher).
 To check your version, use the command:
 `nvm --version`
 
-3 - Quickstart with 🐳 Docker Compose:
+3 - Instale as dependências 
 
-<h3>Instale as dependências</h3>
+<h3>Quickstart with 🐳 Docker Compose:</h3>
+
 `npm install`
 
 Inicie os containers do compose `backend` e `db`
